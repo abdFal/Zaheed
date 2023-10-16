@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zaheed</string>
+    <string name="tab_text_article">Article</string>
+    <string name="tab_text_dzikir_doa"><![CDATA[Dzikir & Doa]]></string>
+    <string name="text_article_home">Article yang mungkin kamu sukai</string>
+    <string name="hsv_text">Explore ibadah apapun sekarang mudah</string>
+</resources>

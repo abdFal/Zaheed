@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MySpalsh" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/zaheed_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Zaheed</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+    </style>
+</resources>
