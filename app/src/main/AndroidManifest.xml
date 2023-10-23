@@ -13,9 +13,15 @@
         android:theme="@style/Theme.Zaheed"
         tools:targetApi="31">
         <activity
+            android:name=".DzikirDoaHarianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SunnahQouliyahActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/MySpalsh"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/MySpalsh">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

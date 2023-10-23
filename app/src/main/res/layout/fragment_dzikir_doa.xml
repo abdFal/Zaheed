@@ -1,6 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondd"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_judul_fitur"
+            android:textColor="@color/fourth"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/txt_sec_doa"
+            android:textColor="@color/fourth"
+            android:textSize="13sp" />
+
+
+
+        <!--                Sunnah Qauliyah Dzikir & Doa Shalat-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_dzikir_doa_shalat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_red"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="4dp"
+                android:padding="14dp">
+
+                <ImageView
+                   android:layout_gravity="center"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="@string/content_txt_icon_qauliyah_shalat"
+                    android:src="@drawable/ic_doa" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/txt_sunnah_qauliyah"
+                    android:textColor="@color/primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+<!--        dzikir setiap saat-->
+            <LinearLayout
+                android:id="@+id/ll_dzikir_setiap_saat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_red"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="4dp"
+                android:padding="14dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="@string/content_txt_icon_dzikir_setiap_saat"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/txt_dzikir_setiap_saat"
+                    android:textColor="@color/primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!--                Dzikir & Doa Harian-->
+        <LinearLayout
+            android:id="@+id/ll_dzikir_doa_harian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_red"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/content_txt_icon_dzikir_doa_harian"
+                android:src="@drawable/ic_dzikir" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:text="@string/txt_dzikir_doa_harian"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_title_dashboard"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textSize="13sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dark_sanda"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="4dp"
+                    android:padding="14dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Iman sementara"
+                        android:textColor="@color/fourth"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="9000"
+                        android:background="@drawable/bg_sand"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="4dp"
+                    android:padding="14dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Pahala harian"
+                        android:textColor="@color/fourth"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="200"
+                        android:background="@drawable/bg_sand"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/fourth"
+                android:text="@string/txt_btn_dashboard"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

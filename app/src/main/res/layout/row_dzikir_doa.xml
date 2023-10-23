@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_dark_sand"
@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:id="@+id/tv_desc"
+        android:id="@+id/tv_lafaz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -35,7 +35,7 @@
 
 
     <TextView
-        android:id="@+id/tv_kategori"
+        android:id="@+id/tv_terjemah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"

@@ -4,4 +4,17 @@
     <string name="tab_text_dzikir_doa"><![CDATA[Dzikir & Doa]]></string>
     <string name="text_article_home">Article yang mungkin kamu sukai</string>
     <string name="hsv_text">Explore ibadah apapun sekarang mudah</string>
+    <string name="offer">Hidup lagi cape capenya malah keinget akhirat?</string>
+    <string name="txt_btn_offer">Sini Taubat</string>
+    <string name="hsv_second_text">Dimanapun kamu berada</string>
+    <string name="txt_judul_fitur"><![CDATA[Dzikir & Doa]]></string>
+    <string name="content_txt_icon_qauliyah_shalat">sunnahqouliyah</string>
+    <string name="txt_sunnah_qauliyah">Sunnah - Sunnah Qouliyah</string>
+    <string name="content_txt_icon_dzikir_setiap_saat">Dzikir setiap saat</string>
+    <string name="txt_dzikir_setiap_saat">Dzikir Setiap Saat</string>
+    <string name="content_txt_icon_dzikir_doa_harian">aaaa</string>
+    <string name="txt_dzikir_doa_harian"><![CDATA[Dzikir & Doa Harian]]></string>
+    <string name="txt_sec_doa">Baca apapun yang berpahala</string>
+    <string name="txt_title_dashboard">Dashboard Keimanan</string>
+    <string name="txt_btn_dashboard">Tingkatkan keimananmu</string>
 </resources>
