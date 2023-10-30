@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txt_title_dashboard"
             android:textAlignment="center"
-            android:background="@color/white"
+            android:background="@drawable/bg_whiteee"
             android:padding="5dp"
             android:textSize="13sp"
             />

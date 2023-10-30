@@ -124,12 +124,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="3dp"
-                android:src="@drawable/amali_hero"/>
+                android:src="@drawable/arabi_hero"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="3dp"
-                android:src="@drawable/akhlaki_hero"/>
+                android:src="@drawable/child_hero"/>
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -144,10 +144,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dashboard Keimanan"/>
 
 
 </LinearLayout>

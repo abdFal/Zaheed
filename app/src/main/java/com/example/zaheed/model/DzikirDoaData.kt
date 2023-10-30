@@ -104,4 +104,51 @@ object DzikirDoaData {
             }
             return list
         }
+
+    private val descDoa = arrayOf(
+        "Doa Masuk WC/kamar mandi",
+        "Doa Keluar WC/kamar mandi",
+        "Dzikir Sebelum Wudhu",
+        "Dzikir Setelah Wudhu",
+        "Doa Melepas Pakaian",
+        "Dzikir Ketika Keluar Rumah",
+        "Doa Pergi Ke Masjid"
+    )
+
+    private val lafazDoa = arrayOf(
+        "اللَّهُمَّ إِنِّى أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+        "غُفْرَانَكَ",
+        "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَـهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ",
+        "اَلْحَمْدُ لِلَّهِ الَّذِيْ كَسَانِيْ هَذَا الثَّوْبَ وَرَزَقَنِيْهِ مِنْ غَيْرِ حَوْلٍ مِنِّيْ وَلَا قُوَّةٍ",
+        "بِسْمِ اللهِِ",
+        "بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ",
+        "اللّهُمَّ اجْعَلْ فِي قَلْبِيْ نُوْراً، وَفِي لِسَانِي نُوْراً، وَاجْعَلْ وَفِي سَمْعِي نُوْراً، وَاجْعَلْ فِي بَصَرِي نُوْراً، وَاجْعَلْ مِنْ خَلْفِي نُوْراً، وَمِنْ أَمَامِي نُوْراً، وَاجْعَلْ مِنْ فَوْقِي نُوْراً، وَمِنْ تَحْتِي نُوْراً، اللّهُمَّ أَعْطِنِي نُوْراً",
+
+    )
+
+    private val terjemahDoa = arrayOf(
+        "Ya Allah, aku berlindung pada-Mu dari segala keburukan dan najis",
+        "Aku memohon ampunan dari-Mu.",
+        "Maha suci Engkau, ya Allah, dan segala puji bagi-Mu. Aku bersaksi bahwa tiada Tuhan selain Engkau. Aku memohon ampunan dan bertaubat kepada-Mu.",
+        "Segala puji bagi Allah yang telah memberiku pakaian ini dan memberikannya kepadaku tanpa daya dan kekuatan dariku.",
+        "Dengan menyebut nama Allah.",
+        "Dengan menyebut nama Allah, aku bertawakkal kepada Allah. Tidak ada daya dan kekuatan kecuali dengan pertolongan Allah.",
+        "a Allah, jadikanlah dalam hatiku cahaya, dalam lisanku cahaya, dalam pendengaranku cahaya, dalam penglihatanku cahaya, dari belakangku cahaya, dari depanku cahaya, dari atasku cahaya, dan dari bawahku cahaya. Ya Allah, berikanlah cahaya kepadaku.",
+
+    )
+
+    val listDoa: ArrayList<DzikirDoaModel>
+        get() {
+            val list = arrayListOf<DzikirDoaModel>()
+            for (data in descDoa.indices) {
+                val doa = DzikirDoaModel(
+                    descDoa[data],
+                    lafazDoa[data],
+                    terjemahDoa[data]
+                )
+                list.add(doa)
+            }
+            return list
+        }
+
 }
