@@ -12,9 +12,18 @@ class DzikirDoaHarianActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDzikirDoaHarianBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Dzikir Doa Harian"
 
         binding.rvDzikirDoaHarian.layoutManager = LinearLayoutManager(this)
         binding.rvDzikirDoaHarian.adapter = DzikirDoaAdapter(DzikirDoaData.listDzikir)
+        setContentView(binding.root)
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }

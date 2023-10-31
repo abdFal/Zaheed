@@ -15,6 +15,14 @@ class DoaDzikirActivity : AppCompatActivity() {
 
         binding.rvDzikirSetiapSaat.layoutManager = LinearLayoutManager(this)
         binding.rvDzikirSetiapSaat.adapter = DzikirDoaAdapter(DzikirDoaData.listDoa)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Dzikir Setiap Saat"
         setContentView(binding.root)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }

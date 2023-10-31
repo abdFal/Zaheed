@@ -15,6 +15,13 @@ class SunnahQouliyahActivity : AppCompatActivity() {
 
         binding.rvQauliyahShalat.layoutManager = LinearLayoutManager(this)
         binding.rvQauliyahShalat.adapter = DzikirDoaAdapter(DzikirDoaData.listQauliyah)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Sunnah Qouliah"
         setContentView(binding.root)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }

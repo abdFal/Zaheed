@@ -13,13 +13,20 @@
         android:theme="@style/Theme.Zaheed"
         tools:targetApi="31">
         <activity
+            android:name=".DzikirPagiPetangActivity"
+            android:theme="@style/Theme.MyZaheed"
+            android:exported="false" />
+        <activity
             android:name=".DoaDzikirActivity"
+            android:theme="@style/Theme.MyZaheed"
             android:exported="false" />
         <activity
             android:name=".DzikirDoaHarianActivity"
+            android:theme="@style/Theme.MyZaheed"
             android:exported="false" />
         <activity
             android:name=".SunnahQouliyahActivity"
+            android:theme="@style/Theme.MyZaheed"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

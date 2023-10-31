@@ -24,6 +24,7 @@ class DzikirDoaFragment : Fragment(), View.OnClickListener {
         binding.llDzikirDoaShalat.setOnClickListener(this)
         binding.llDzikirDoaHarian.setOnClickListener(this)
         binding.llDzikirSetiapSaat.setOnClickListener(this)
+        binding.llDzikirPagiPetang.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -36,6 +37,9 @@ class DzikirDoaFragment : Fragment(), View.OnClickListener {
                 startActivity(intentDDS)
             }R.id.ll_dzikir_setiap_saat -> {
                 val intentDDS = Intent(requireContext(), DoaDzikirActivity::class.java)
+                startActivity(intentDDS)
+            }R.id.ll_dzikir_pagi_petang -> {
+                val intentDDS = Intent(requireContext(), DzikirPagiPetangActivity::class.java)
                 startActivity(intentDDS)
             }
         }
