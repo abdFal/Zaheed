@@ -18,4 +18,9 @@
     <string name="txt_title_dashboard">Dashboard Keimanan</string>
     <string name="txt_btn_dashboard">Tingkatkan keimananmu</string>
     <string name="txt_featured_dzikir">Featured\n</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="txt_profile">Zaheed User\n</string>
+
+
 </resources>

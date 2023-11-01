@@ -10,6 +10,7 @@ import com.example.zaheed.adapter.ArticleAdapter
 import com.example.zaheed.databinding.FragmentArticleBinding
 import com.example.zaheed.model.ArticleData
 import com.example.zaheed.model.ArticleModel
+import com.google.android.material.datepicker.MaterialDatePicker
 
 class ArticleFragment : Fragment() {
     private lateinit var binding: FragmentArticleBinding
@@ -23,5 +24,16 @@ class ArticleFragment : Fragment() {
 
         binding.rvArticle.layoutManager = LinearLayoutManager(context)
         binding.rvArticle.adapter = ArticleAdapter(ArticleData.listArticle)
+
+        val btnWorld = binding.imgWorldBtn
+        btnWorld.setOnClickListener{
+            val datePicker =
+                MaterialDatePicker.Builder.datePicker()
+                    .setTitleText("Select date")
+                    .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+                    .build()
+
+            fragmentManager?.let { it1 -> datePicker.show(it1, "picker") }
+        }
     }
 }

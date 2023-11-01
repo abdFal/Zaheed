@@ -12,13 +12,24 @@
     android:padding="25dp">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/featured_hero"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dzikir Pagi"
         android:textSize="20sp"
-        android:paddingVertical="5dp"
         android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bisa Dibaca Saat Setelah subuh hingga syuruk"
+        android:textSize="20sp"
+        android:layout_marginBottom="6dp"
+        android:textStyle="italic"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_dzikir_pagi"
         android:layout_width="match_parent"
@@ -31,8 +42,15 @@
         android:layout_height="wrap_content"
         android:text="Dzikir Petang"
         android:textSize="20sp"
-        android:paddingVertical="5dp"
+        android:paddingTop="5dp"
         android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bisa Dibaca Saat Setelah ashar hingga petang"
+        android:textSize="20sp"
+        android:layout_marginBottom="6dp"
+        android:textStyle="italic"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_dzikir_petang"
         android:layout_width="match_parent"

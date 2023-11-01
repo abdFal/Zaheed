@@ -4,6 +4,7 @@
 
     <solid android:color="@color/second" />
 
+
     <corners
         android:radius="15dp" />
 </shape>
